@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ccc;
+            display: block;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+        }
+        .profile-photo:hover {
+            border-color: #e64818;
+            transition: border-color 0.3s ease;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: #e64818;
+        }
+        .contact-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            background-color: #e64818;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #c53714;
+        }
+        #para{
+            color:#e64818;
+            font-weight: bold;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .animated-text {
+            font-size: 24px;
+            font-weight: bold;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQHgKCk3E4NTOw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710853097225?e=1751500800&v=beta&t=lx5uCWcTCOWtJGSIJrZvpAR1JNPpgO8-s3JBSDXdcu4" alt="My Photo" class="profile-photo">
+        <h1>ANMOL SHARMA</h1>
+        <p id = "para">Web Developer | Designer | Thinker</p>
+    </header>
+    <section>
+        <h2 class="animated-text scroll-animate">About Me</h2>
+        <p class="scroll-animate">Born and brought up in a small town, in Himachal Pradesh, I have always been fascinated by technology...</p>
+    </section>
+    <section>
+        <h2 class="animated-text scroll-animate">Skills</h2>
+        <ul class="scroll-animate">
+            <li>HTML, CSS, JavaScript</li>
+            <li>Responsive Web Design</li>
+            <li>Networking and Wi-Fi Configuration</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
+    <section>
+        <h2 class="animated-text scroll-animate">Projects</h2>
+        <ul class="scroll-animate">
+            <li>AI-Based Calculator</li>
+            <li>Rock-Paper-Scissors Game</li>
+            <li>Responsive Layouts</li>
+            <li>Portfolio Website</li>
+        </ul>
+    </section>
+<section>
+    <h2 class="animated-text scroll-animate">Certifications</h2>
+    <ul>
+        <li>Certification In Networking Essentials</li>
+        <li>Certified In Spoken English </li>
+        <li>Introduction to Cybersecurity by Cisco Networking Academy</li>
+        <li>Certification In Operating System Concepts</li>
+        <li>Certification in Front End Development</li>
+        <li>Certification In Digital Content Making</li>
+    </ul>
+</section>
+<section>
+    <h2 class="animated-text">My Certificates</h2>
+    <div class="certifications-gallery">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQGpm-biRz3S1g/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025196352?e=1749081600&v=beta&t=uPgmF5oNPxri1EzDzpOqqnbRppajWw2Ewt9AfdJoTWE" alt="Certification 1" class="certification-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQGMdIVBbwkOWg/feedshare-shrink_800/B4DZVSrJ0HHwAo-/0/1740848802109?e=1749081600&v=beta&t=UdSpY65mqTwN-sWZIVjsloGftGr_PqHpQqWYXt6JOBg" alt="Certification 2" class="certification-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQF_n4Srn8BSig/feedshare-shrink_800/B4DZWqPAFNG8Ag-/0/1742317815158?e=1749081600&v=beta&t=feas_x7o8rMFh2unl5BuxXLJvUtsZOzCXnhpeUWFyDs" alt="Certification 3" class="certification-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQH6mQ2jzw5aZA/feedshare-shrink_800/B4DZXIviNaHwAw-/0/1742829660247?e=1749081600&v=beta&t=2BDwhr2quPVP-ajYBF-uMjlRCXKZVolGMOakxI7Kk8Q" alt="Certification 4" class="certification-photo">
+        <img src="https://media.licdn.com/dms/image/v2/D4D22AQHKdCM75KFcVw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1713025196242?e=1749081600&v=beta&t=3vfsl_6AUlz1pKkAsoB9m2pg7P7-8URx5lLONn3W5gI" alt="Certification 4" class="certification-photo">
+    </div>
+</section>
+        <h2 class="animated-text">Contact Me</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <footer>
+        <p>Contact me at: anxsharma90@gmail.com</p>
+        <div class="social-links">
+            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank">Gmail</a>
+            <a href="https://github.com/07ANMOL/ANMOL.git" target="_blank">GitHub</a>
+            <a href="https://www.instagram.com/unm.olll_sharma?igsh=ajA4NW56NWFpNDNs" target="_blank">Instagram</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const elements = document.querySelectorAll(".scroll-animate");
+    
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add("visible");
+                    }
+                });
+            });
+    
+            elements.forEach((el) => observer.observe(el));
+        });
+    </script>
+</body>
+</html>

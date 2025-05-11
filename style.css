@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    color: #333; 
+}
+
+header {
+    background: #004085;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 10px;
+    color: #f9fafa;
+    transition: color 0.3s ease;
+    font-weight: bolder;
+}
+h2{
+    font-weight: bolder;
+}
+
+
+section {
+    margin: 5px;
+    padding: 10px;
+    background: rgb(149, 179, 251);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+
+footer {
+    background: #004085;
+    color: white;
+    padding: 5px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+footer:hover {
+    background: #0056b3;
+}
+
+button {
+    background: #0056b3; 
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: #004085;
+    transform: translateY(-2px);
+}
+
+a {
+    color: #0056b3;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #004085;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.certifications-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.certification-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ddd;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.certification-photo:hover {
+    transform: scale(1.1);
+    border-color: #e64818;
+}
+.scroll-animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.scroll-animate.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
